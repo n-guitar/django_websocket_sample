@@ -4,3 +4,7 @@ from django.views import generic
 
 class IndexView(generic.TemplateView):
     template_name = 'index.html'
+
+
+async def AsuncIndex(request):
+    return render(request, 'index.html')
