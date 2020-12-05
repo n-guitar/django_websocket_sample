@@ -6,5 +6,6 @@ class IndexView(generic.TemplateView):
     template_name = 'index.html'
 
 
-async def AsuncIndex(request):
-    return render(request, 'index.html')
+async def websocket_view(socket):
+    await socket.accept()
+    await socket.send

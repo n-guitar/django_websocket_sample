@@ -1,21 +1,22 @@
 # django3.1 ASGI uvicorn websocket sample
 
-
-# メモ
+# sw version
 ```bash
-python -m venv env
-source env/bin/activate
-pip install django==3.1.3
-# env/bin/django-admin startproject config .
-pip install uvicorn
-uvicorn config.asgi:application
-# これだとwebsocketプロトコルが使えなくてerrになる
-websocketが必要
-
-pip install websockets
-uvicorn config.asgi:application
+$ python -V
+Python 3.8.0
 ```
 
-# 参考サイト
-- https://dev.to/jaydenwindle/adding-websockets-to-your-django-app-with-no-extra-dependencies-2f6h
-- https://github.com/encode/uvicorn/issues/797
+# memo
+```bash
+$ python -m venv env
+$ source env/bin/activate
+$ pip install django==3.1.3
+$ pip install uvicorn
+$ pip install websockets
+$ uvicorn config.asgi:application
+```
+
+# branch
+|branch name|overview|
+|---|---|
+|[simple-websocket-v0.1.0](https://github.com/n-guitar/django_websocket_sample/tree/simple-websocket-v0.1.0)|most simple websocket|
