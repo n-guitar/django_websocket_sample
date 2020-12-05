@@ -1,11 +1,16 @@
-async def websocket_application(event, receive, send):
+async def websocket_application(scope, receive, send):
+    # scopeに任意のket:valueを追加可能
+    scope['room'] = 'test'
     while True:
         event = await receive()
+        # debug
+        print("----websocket.py----")
+        print(event)
+        print("scope/['room']:", scope['room'])
 
         if event['type'] == 'websocket.connect':
             await send({
                 'type': 'websocket.accept',
-                'text': 'websocket connected'
             })
 
         if event['type'] == 'websocket.disconnect':
