@@ -20,3 +20,4 @@ $ uvicorn config.asgi:application
 |branch name|overview|
 |---|---|
 |[simple-websocket-v0.1.0](https://github.com/n-guitar/django_websocket_sample/tree/simple-websocket-v0.1.0)|most simple websocket|
+|[simple-websocket-v0.2.0](https://github.com/n-guitar/django_websocket_sample/tree/simple-websocket-v0.2.0)|separate a websocket from the asgi.py|
